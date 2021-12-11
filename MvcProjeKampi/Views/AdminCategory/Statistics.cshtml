@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "Statistics";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<style>
+    .divcss {
+        width: 200px;
+        color: white;
+        height: 100px;
+        background-color: cadetblue;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 10px;
+        font-family: 'Segoe UI';
+        font-size: 22px;
+        font-style: italic;
+        text-align: center
+    }
+</style>
+<div class="divcss">
+    <p>
+        @ViewBag.kategorisayisi
+        <br />
+        Kategori Sayisi
+    </p>
+    <br />
+</div>
+<br />
+<div class="divcss">
+    <p>
+        @ViewData["kategoridurumtruefalseolanlar"]
+        <br />
+        <h4>
+            kategoridurumtrue
+            falseolanlar
+        </h4>
+    </p>
+</div>
+ &nbsp;
+<div class="divcss">
+    <p>
+        @ViewData["yazaradindaAharfiGecenler"]
+        <br />
+        <h4>
+            yazarAharfi
+            baslayanlar
+        </h4>
+    </p>
+</div>
+
+<div class="divcss">
+    <p>
+        @ViewData["yazilimbasliksayisi"]
+        <br />
+        yazilimbasliksayisi
+    </p>
+</div>
+<br />
+<div class="divcss">
+    <p>
+        @ViewData["EnCokBaslik"]
+        <br />
+        <h4>
+            EnCokBasliga
+            SahipKategori
+        </h4>
+    </p>
+</div>
+
+
+

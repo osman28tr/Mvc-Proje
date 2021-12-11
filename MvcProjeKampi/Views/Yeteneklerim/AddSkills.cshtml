@@ -1,0 +1,19 @@
+﻿@model EntityLayer.Concrete.Yetenek
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h1>Yeni Yetenek Ekleme</h1>
+<br />
+@using (Html.BeginForm("AddSkills", "Yeteneklerim", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Yetenek Adı")
+        @Html.TextBoxFor(x => x.YetenekName, new { @class = "form-control" })
+        <br />
+        <br />
+        @Html.Label("Yetenek Degeri")
+        @Html.TextBoxFor(x => x.YetenekValue, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info">Yetenek Oluştur</button>
+    </div>
+}

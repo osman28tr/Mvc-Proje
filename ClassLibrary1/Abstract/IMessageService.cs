@@ -1,0 +1,23 @@
+﻿using EntityLayer;
+using EntityLayer.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ClassLibrary1.Abstract
+{
+    public interface IMessageService
+    {
+        List<Message> GetListInbox(string p);
+        List<Message> GetListSendInbox(string p);
+        void MessageAdd(Message message);
+        Message GetByID(int id);
+        void MessageDelete(Message message);
+        void MessageUpdate(Message message);
+        int SendMessageCount();
+        int ReceiverMessageCount();
+        //void DraftstateUpdate(bool durum);
+    }
+}
